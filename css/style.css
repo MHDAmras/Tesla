@@ -33,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 150px;
+    padding: 0 10px;
     transition: 0.5s ease;
 }
 
@@ -74,6 +74,7 @@
    padding: 5px 10px;
    border-radius: 5px;
    margin-left: 20px;
+   font-size: 13px;
    background: transparent;
    backdrop-filter: blur(10px);
    color: #ffff;
@@ -200,6 +201,14 @@
         margin: 10px;
         cursor: pointer;
     }
+    .log-btn{
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-left: 10px;
+      font-size: 9px;
+    
+   }
+   
 }
 
 
@@ -346,6 +355,7 @@
     background-position: center;
     align-items: center;
     background-attachment: fixed;
+    top: 0;
 }
 
 
@@ -403,6 +413,8 @@
 .scroll-down::after{
   top: 30%;
 }
+
+
 @keyframes scroll-down{
   0%{
     opacity: 0;
@@ -420,6 +432,19 @@
   }
 }
 
+
+@media screen and (max-width:586px) {
+  .home{
+
+    height: 100vh;
+    background-size: 50rem;
+    background-position: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-color: #000;
+}
+  
+}
 
 
 
@@ -530,6 +555,33 @@
 .card-body{
   margin-top: 2rem;
 }
+.card-body {
+  text-align: center; 
+  height: 220px;
+  padding-top: 20px;
+  border-radius: 0px;
+  backdrop-filter: blur(5px);
+  background: transparent;
+  background-color: rgba(191, 191, 191, 0.158);
+
+}
+.card-body p {
+  font-size: 13px; 
+  font-weight: 200;
+}
+
+.heading{  
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 2vh;
+}
+.heading h2{
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #FFFF;
+
+}
 }
 
 
@@ -542,6 +594,7 @@
 .p3-headtitle{
   font-size: 1.6rem;
   text-transform: uppercase;
+  
 }
 
 #header,
@@ -560,7 +613,7 @@
     width: 100%;
 }
 #second {
-  background: url(../img/tyacan/porsche-normal.webp) 50% 0 no-repeat fixed;
+  background: url(../img/tyacan/porsche-zoom211.webp) 50% 0 no-repeat fixed;
   background-size: cover;
   color: white;
   height: 100vh;
@@ -619,6 +672,14 @@
     width: 100%;
     height: 80%;
 }
+.cars_title{
+  font-size: 2rem;
+}
+
+.cars_description{
+  font-size: 1rem;
+  line-height: 30px;
+}
 .story .float-left,
 .story .float-right,
 .story .float-right1 {
@@ -646,6 +707,83 @@ h2 {
     padding-top:25px;
     font-size:24px;
   }
+  #intro {
+    background-size: 90rem;
+  }
+  #second{
+    background-size: 90rem;
+
+  }
+  #second1{
+    background-size:70rem;
+
+  }
+  #third{
+    background-size: 60rem;
+
+  }
+
+  .story .float-left,
+.story .float-right,
+.story .float-right1 {
+    padding: 100px 0 0 0;
+    position: relative;
+    width: 350px;
+    min-width: 400px;
+    width: 53%;
+    background: rgba(0, 0, 0, 0.39);
+    box-shadow: 0px 14px 30px rgba(20, 21, 24, 0.432);
+    box-shadow: 0px 14px 30px rgba(20, 21, 24, 0.432);
+
+    backdrop-filter: blur(15px);
+    height: 78%;
+    padding: 3% 30px;
+    z-index: 300;
+    
+}
+.cars_title{
+  font-size: 1.7rem;
+}
+
+.cars_description{
+  font-size: .9rem;
+  line-height: 25px;
+
+}
+}
+
+@media screen and (max-width:568px) {
+  .story .float-left,
+  .story .float-right,
+  .story .float-right1 {
+    
+      padding: 100px 0 0 0;
+      position: relative;
+      width: 350px;
+      min-width: 0px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.39);
+      box-shadow: 0px 14px 30px rgba(20, 21, 24, 0.432);
+      box-shadow: 0px 14px 30px rgba(20, 21, 24, 0.432);
+  
+      backdrop-filter: blur(15px);
+      height: auto;
+      padding: 3% 30px;
+      z-index: 300;
+      
+  }
+  .cars_title{
+    font-size: 1.4rem;
+  }
+  
+  .cars_description{
+    font-size: .7rem;
+    line-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
 }
 
 .intro {
@@ -806,7 +944,7 @@ h2 {
     width: 70%;
 
     transform: translatey(80px);
-    right: -6%;
+    right: 0%;
   }
 }
 @keyframes image {
